@@ -1,0 +1,90 @@
+---
+---
+
+<section id="contacto" class="py-16 lg:py-32">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-4xl font-bold mb-4">Contacto</h2>
+    <p class="mb-8 max-w-md mx-auto">
+      Ponte en contacto con nosotros y obtén una cotización sin compromiso
+      alguno
+    </p>
+    <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      class="border-2 rounded-xl p-4 sm:p-8 max-w-md mx-auto bg-neutral-50 flex flex-col"
+    >
+      <p class="hidden">
+        <input name="bot-field" />
+      </p>
+      <div class="flex flex-col sm:flex-row sm:gap-4">
+        <input
+          type="text"
+          name="name"
+          placeholder="Nombre"
+          class="form-input w-full rounded-md bg-slate-50 border-gray-200 mb-4 text-red-100"
+        />
+        <input
+          type="text"
+          name="lastname"
+          placeholder="Apellido"
+          class="form-input w-full rounded-md bg-slate-50 border-gray-200 mb-4 text-red-100"
+        />
+      </div>
+      <p>
+        <input
+          type="tel"
+          name="phone"
+          placeholder="Teléfono"
+          class="form-input w-full rounded-md bg-slate-50 border-gray-200 mb-4 text-red-100"
+        />
+      </p>
+      <p>
+        <input
+          type="email"
+          name="email"
+          placeholder="Correo electrónico"
+          class="form-input w-full rounded-md bg-slate-50 border-gray-200 mb-4 text-red-100"
+        />
+      </p>
+      <p>
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Mensaje"
+          class="form-textarea w-full rounded-md bg-slate-50 border-gray-200 mb-4 text-red-100"
+        ></textarea>
+      </p>
+      <button
+        type="submit"
+        class="px-8 py-2 bg-cyan-400 hover:bg-sky-800 text-white text-lg font-bold rounded-md w-2/3"
+        >Enviar</button
+      >
+    </form>
+    <!-- <form name="contact" method="POST" data-netlify="true">
+      <p>
+        <label>Your Name: <input type="text" name="name" /></label>
+      </p>
+      <p>
+        <label>Your Email: <input type="email" name="email" /></label>
+      </p>
+      <p>
+        <label
+          >Your Role: <select name="role[]" multiple>
+            <option value="leader">Leader</option>
+            <option value="follower">Follower</option>
+          </select></label
+        >
+      </p>
+      <p>
+        <label>Message: <textarea name="message"></textarea></label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form> -->
+  </div>
+</section>

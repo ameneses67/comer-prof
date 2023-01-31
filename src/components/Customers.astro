@@ -1,0 +1,63 @@
+---
+// library imports
+import { Image } from "@astrojs/image/components";
+import { Icon } from "astro-icon";
+
+// image imports
+import Gobierno from "../images/gobierno.png";
+import Privado from "../images/privado.png";
+---
+
+<section id="clientes" class="bg-slate-50 py-16 lg:py-32">
+  <h2 class="text-center text-4xl font-bold mb-16">Nuestros Clientes</h2>
+  <div
+    class="container mx-auto px-4 text-center flex flex-col md:flex-row gap-12"
+  >
+    <div class="flex flex-col gap-4 w-full">
+      <Image
+        src={Gobierno}
+        alt="Gobierno de la república"
+        height={120}
+        format="avif"
+        class="mx-auto"
+      />
+      <h3 class="text-3xl font-bold">Sector Público</h3>
+      <p>
+        Soluciones en equipamiento médico, servicios de mantenimiento y
+        servicios integrales para el sector salud de nuestro país. Asistiendo al
+        desarrollo del mismo en proyectos de gran envergadura, como el nuevo
+        aeropuerto y el tren maya.
+      </p>
+    </div>
+    <div class="flex flex-col gap-4 w-full">
+      <Image
+        src={Privado}
+        alt="Iniciativa privada"
+        height={120}
+        format="avif"
+        class="mx-auto"
+      />
+      <h3 class="text-3xl font-bold">Sector Público</h3>
+      <p>
+        Atendemos a nuestros clientes en todo el largo y ancho de la república
+        mexicana. Contamos con personal altamente capacitado para brindar
+        soporte con gran flexibilidad y tiempo de respuesta, integrando las
+        mejores propuestas con los mejores precios del mercado.
+      </p>
+    </div>
+  </div>
+  <div class="text-center mt-12">
+    <h4 class="text-2xl font-bold mb-4">Visítanos en</h4>
+    <div class="flex gap-4 mx-auto w-fit">
+      <a href="#">
+        <Icon name="logos:facebook" class="w-8" />
+      </a>
+      <a href="#">
+        <Icon name="logos:twitter" class="w-8" />
+      </a>
+      <a href="#">
+        <Icon name="logos:instagram-icon" class="w-8" />
+      </a>
+    </div>
+  </div>
+</section>
