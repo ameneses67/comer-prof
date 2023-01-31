@@ -1,0 +1,43 @@
+---
+import { Image } from "@astrojs/image/components";
+
+import Philips from "../images/philips.png";
+import Lifee from "../images/lifee.png";
+import Braun from "../images/braun.png";
+import Abbott from "../images/abbott.png";
+---
+
+<section>
+  <div
+    class="container mx-auto grid grid-cols-2 md:grid-cols-4 justify-items-center my-8"
+  >
+    <Image
+      src={Philips}
+      alt="logotipo marca philips"
+      width={150}
+      aspectRatio={2 / 1}
+      format="avif"
+    />
+    <Image
+      src={Lifee}
+      alt="logotipo marca lifee"
+      width={150}
+      aspectRatio={2 / 1}
+      format="avif"
+    />
+    <Image
+      src={Braun}
+      alt="logotipo marca braun"
+      width={150}
+      aspectRatio={2 / 1}
+      format="avif"
+    />
+    <Image
+      src={Abbott}
+      alt="logotipo marca abbott"
+      width={150}
+      aspectRatio={2 / 1}
+      format="avif"
+    />
+  </div>
+</section>

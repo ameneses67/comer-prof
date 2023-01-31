@@ -1,0 +1,42 @@
+---
+// library imports
+import { Image } from "@astrojs/image/components";
+
+// component imports
+import Button from "./Button.astro";
+
+// image imports
+import Registration from "../images/registration.png";
+---
+
+<section class="pb-16">
+  <div
+    class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-8"
+  >
+    <Image
+      src={Registration}
+      alt="certificación de registro"
+      width={450}
+      format="avif"
+    />
+    <div class="text-center md:text-left">
+      <h2 class="text-3xl font-bold mb-4">Comprometidos con la excelencia</h2>
+      <p class="mb-4">
+        Ante la necesidad existente hemos establecido tratos comerciales con las
+        mejores empresas de distribución en el mundo. Comparando costo y calidad
+        entre todas las opciones que existen en el mercado para proporcionar la
+        mejor opción a nuestros clientes.
+      </p>
+      <p class="mb-8">
+        Los productos que manejamos cuentan con certificados de garantía y son
+        aprobados por las diferentes disposiciones sanitarias de cada país.
+      </p>
+      <Button
+        text="Contacto"
+        href="#contacto"
+        style="primary"
+        classes="bg-cyan-400 hover:bg-sky-800 font-bold rounded-md transition px-6 py-2 whitespace-nowrap w-fit h-fit text-white"
+      />
+    </div>
+  </div>
+</section>
