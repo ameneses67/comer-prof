@@ -1,0 +1,43 @@
+---
+// library imports
+import { Image } from "@astrojs/image/components";
+import { Icon } from "astro-icon";
+
+// component imports
+import Button from "./Button.astro";
+
+// data imports
+import navData from "../data/navData";
+
+// image imports
+import Logo from "../images/logo.png";
+---
+
+<nav aria-label="Primary">
+  <div
+    class="navbar container mx-auto px-4 sm:px-8 py-2 flex justify-between items-center"
+  >
+    <a href="/" aria-label="Ir a página principal">
+      <Image src={Logo} alt="Logotipo" width={150} format="avif" />
+    </a>
+    <ul class="hidden md:block">
+      {
+        navData.map((item) => (
+          <Button
+            text={item.name}
+            href={item.path}
+            style="primary"
+            isFilled={false}
+            data-navLink
+            classes="rounded-md mr-8 last-of-type:mr-0 last-of-type:text-white last-of-type:font-bold last-of-type:bg-cyan-400 last-of-type:hover:bg-sky-800 transition duration-300 last-of-type:py-2 last-of-type:px-6"
+          />
+        ))
+      }
+    </ul>
+    <Icon name="tabler:menu-2" class="w-8 md:hidden" />
+  </div>
+</nav>
+
+<script>
+  import "../js/nav.js";
+</script>
