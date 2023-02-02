@@ -1,0 +1,48 @@
+---
+// library imports
+import { Image } from "@astrojs/image/components";
+
+// data imports
+import prodData from "../data/prodData";
+
+// image imports
+import Cubrebocas from "../images/cubrebocas.webp";
+---
+
+<section
+  id="productos"
+  class="py-16 lg:py-32 bg-gradient-to-b from-white to-slate-100"
+>
+  <div
+    class="container mx-auto px-4 text-center flex flex-col items-center gap-8"
+  >
+    <h2 class="text-4xl font-bold">Nuestros Productos</h2>
+    <p class="max-w-lg">
+      Todos nuestros productos son cuidadosamente seleccionados y cuentan con
+      certificados de garantía y están aprobados por las diferentes
+      disposiciones sanitarias de cada país.
+    </p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {
+        prodData.map((item) => (
+          <div class="bg-white p-4">
+            <div class="border border-gray-300">
+              <Image
+                src={item.imgUrl}
+                alt={item.title}
+                width={400}
+                height={300}
+                format="avif"
+                fit="contain"
+                background="rgb(255, 255, 255)"
+              />
+            </div>
+            <h3 class="text-3xl text-stone-600 font-bold mt-8 mb-12">
+              {item.title}
+            </h3>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

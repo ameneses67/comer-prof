@@ -1,6 +1,8 @@
 ---
+// library imports
 import { Image } from "@astrojs/image/components";
 
+// image imports
 import Philips from "../images/philips.png";
 import Lifee from "../images/lifee.png";
 import Braun from "../images/braun.png";
@@ -9,7 +11,7 @@ import Abbott from "../images/abbott.png";
 
 <section>
   <div
-    class="container mx-auto grid grid-cols-2 md:grid-cols-4 justify-items-center my-8"
+    class="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-4 justify-items-center my-8"
   >
     <Image
       src={Philips}

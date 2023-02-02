@@ -1,27 +1,27 @@
 const prodData = [
   {
     title: "Cubrebocas",
-    imgUrl: "Cubrebocas",
+    imgUrl: "@astroimage/images/cubrebocas.webp",
   },
   {
     title: "Pruebas COVID",
-    imgUrl: "Covid",
+    imgUrl: "@astroimage/images/covid.png",
   },
   {
     title: "Instrumental Médico",
-    imgUrl: "Instrumental",
+    imgUrl: "@astroimage/images/instrumental.webp",
   },
   {
     title: "Camas y Camillas",
-    imgUrl: "Camilla",
+    imgUrl: "@astroimage/images/camilla.jpg",
   },
   {
     title: "Medicamentos",
-    imgUrl: "Medicamentos",
+    imgUrl: "@astroimage/images/medicamentos.jpg",
   },
   {
     title: "Equipo Consultorios",
-    imgUrl: "Equipo",
+    imgUrl: "@astroimage/images/equipo.png",
   },
 ];
 
