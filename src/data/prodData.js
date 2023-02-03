@@ -1,11 +1,11 @@
 const prodData = [
   {
     title: "Cubrebocas",
-    path: "/src/images/cubrebocas.webp",
+    path: "/icono.png",
   },
   {
     title: "Pruebas COVID",
-    path: "/src/images/covid.png",
+    path: "src/images/covid.png",
   },
   {
     title: "Instrumental Médico",
