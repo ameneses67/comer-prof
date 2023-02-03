@@ -1,10 +1,11 @@
 ---
 // library imports
 import { Image } from "@astrojs/image/components";
-import { Icon } from "astro-icon";
 
 // component imports
 import Button from "./Button.astro";
+import Hamburger from "./Hamburger.astro";
+import NavMob from "./NavMob.astro";
 
 // data imports
 import navData from "../data/navData";
@@ -13,7 +14,8 @@ import navData from "../data/navData";
 import Logo from "../images/logo.png";
 ---
 
-<nav aria-label="Primary">
+<nav aria-label="Primary" class="relative">
+  <NavMob />
   <div
     class="navbar container mx-auto px-4 sm:px-8 py-2 flex justify-between items-center"
   >
@@ -34,7 +36,7 @@ import Logo from "../images/logo.png";
         ))
       }
     </ul>
-    <Icon name="tabler:menu-2" class="w-8 md:hidden" />
+    <Hamburger />
   </div>
 </nav>
 
