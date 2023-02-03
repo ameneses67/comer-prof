@@ -1,27 +1,27 @@
 const prodData = [
   {
     title: "Cubrebocas",
-    path: "/icono.png",
+    path: "/cubrebocas.webp",
   },
   {
     title: "Pruebas COVID",
-    path: "src/images/covid.png",
+    path: "/covid.png",
   },
   {
     title: "Instrumental Médico",
-    path: "/src/images/instrumental.webp",
+    path: "/instrumental.webp",
   },
   {
     title: "Camas y Camillas",
-    path: "/src/images/camilla.jpg",
+    path: "/camilla.jpg",
   },
   {
     title: "Medicamentos",
-    path: "/src/images/medicamentos.jpg",
+    path: "/medicamentos.jpg",
   },
   {
     title: "Equipo Consultorios",
-    path: "/src/images/equipo.png",
+    path: "/equipo.png",
   },
 ];
 

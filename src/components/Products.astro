@@ -5,16 +5,6 @@ import { Image } from "@astrojs/image/components";
 
 // data imports
 import prodData from "../data/prodData";
-
-// image imports
-import Cubrebocas from "../images/cubrebocas.webp";
-import Covid from "../images/covid.png";
-import Instrumental from "../images/instrumental.webp";
-import Camilla from "../images/camilla.jpg";
-import Medicamentos from "../images/medicamentos.jpg";
-import Equipo from "../images/equipo.png";
-
-prodData.map((item) => console.log(item.path));
 ---
 
 <section
@@ -25,7 +15,7 @@ prodData.map((item) => console.log(item.path));
     class="container mx-auto px-4 text-center flex flex-col items-center gap-8"
   >
     <h2 class="text-4xl font-bold">Nuestros Productos</h2>
-    <p class="max-w-lg">
+    <p class="max-w-lg text-lg">
       Todos nuestros productos son cuidadosamente seleccionados y cuentan con
       certificados de garantía y están aprobados por las diferentes
       disposiciones sanitarias de cada país.
