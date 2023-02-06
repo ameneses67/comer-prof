@@ -1,6 +1,12 @@
 ---
 // library imports
 import { Image } from "@astrojs/image/components";
+import { getImage } from "@astrojs/image";
+
+const { src } = await getImage({
+  src: bgImage,
+  alt: "",
+});
 
 // image imports
 import heroImage from "../images/hero-image.png";
@@ -28,11 +34,16 @@ import bgImage from "../images/banner-image.jpg";
     />
   </div>
   <div class="absolute inset-0 bg-sky-800 -z-10 opacity-90"></div>
-  <Image
+  <!-- <Image
     src={bgImage}
     alt=""
     width={1200}
     format="avif"
+    class="absolute inset-0 w-full h-full object-cover -z-20"
+  /> -->
+  <img
+    src={src}
+    alt=""
     class="absolute inset-0 w-full h-full object-cover -z-20"
   />
 </section>
