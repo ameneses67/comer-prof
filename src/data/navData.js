@@ -15,10 +15,6 @@ const navData = [
     name: "Clientes",
     path: "#clientes",
   },
-  {
-    name: "Contacto",
-    path: "#contacto",
-  },
 ];
 
 export default navData;
