@@ -1,0 +1,23 @@
+---
+// layout imports
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout
+  title="Notificación"
+  description="Notificación de recibo de mensaje"
+>
+  <div class="mx-auto my-20 px-8 max-w-lg lg:max-w-xl text-lg">
+    <h1 class="text-2xl text-sky-800 font-semibold mb-8">
+      Tu mensaje ha sido enviado exitosamente
+    </h1>
+    <p class="mb-2">
+      Hemos recibido tu mensaje y pronto nos pondremos en contacto contigo.
+    </p>
+    <p class="mb-4">Por favor ten en cuenta nuestros horarios de atención:</p>
+    <ul class="list-disc">
+      <li class="text-left mb-2 ml-8">Lun a Vie 9:00 - 18:00</li>
+      <li class="text-left mb-2 ml-8">Sáb 9:00 - 13:00</li>
+    </ul>
+  </div>
+</MainLayout>
