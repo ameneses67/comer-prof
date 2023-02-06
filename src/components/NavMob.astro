@@ -7,7 +7,7 @@ import Button from "./Button.astro";
 import Hamburger from "./Hamburger.astro";
 
 // data imports
-import navData from "../data/navData";
+import mobNavData from "../data/navMobData";
 
 // image imports
 import Logo from "../images/logo.png";
@@ -15,20 +15,30 @@ import Logo from "../images/logo.png";
 
 <div
   id="navmob"
-  class="hidden absolute top-full bg-white w-full h-screen p-16 z-20 transition duration-1000 ease-in-out"
+  class="scale-y-0 origin-top absolute top-full bg-white w-full h-[calc(100vh-81px)] z-20 flex justify-center items-center transition duration-300 ease-in-out"
 >
-  <ul class="flex flex-col items-center justify-center gap-8 mt-16">
+  <ul>
     {
-      navData.map((item) => (
-        <Button
-          text={item.name}
-          href={item.path}
-          style="primary"
-          isFilled={false}
-          data-navLink
-          classes="rounded-md mr-8 last-of-type:mr-0 last-of-type:text-white last-of-type:font-bold last-of-type:bg-cyan-400 last-of-type:hover:bg-sky-800 transition duration-300 last-of-type:py-2 last-of-type:px-6"
-        />
+      mobNavData.map((item) => (
+        <li class="text-center mb-12">
+          <Button
+            text={item.name}
+            href={item.path}
+            style="primary"
+            isFilled={false}
+            data-navLink
+            classes="text-3xl"
+          />
+        </li>
       ))
     }
+    <li class="text-center">
+      <Button
+        text="Contacto"
+        href="#contacto"
+        style="primary"
+        classes="rounded-md text-3xl last-of-type:text-white last-of-type:font-bold last-of-type:bg-cyan-400 last-of-type:hover:bg-sky-800 transition duration-300 last-of-type:py-2 last-of-type:px-6"
+      />
+    </li>
   </ul>
 </div>
