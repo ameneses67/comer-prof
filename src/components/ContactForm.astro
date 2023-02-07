@@ -1,44 +1,10 @@
 <form
   method="post"
-  action="https://sendfox.com/form/m89nx2/3qxnl6"
-  id="3qxnl6"
+  action="https://sendfox.com/form/m89nx2/3opy6d"
+  id="3opy6d"
   data-async="true"
-  data-recaptcha="true"
+  data-recaptcha="false"
 >
-  <p>
-    <label for="sendfox_form_name">First Name:</label><input
-      type="text"
-      id="sendfox_form_name"
-      placeholder="First Name"
-      name="first_name"
-      required
-    />
-  </p>
-  <p>
-    <label for="sendfox_form_last_name">Last Name:</label><input
-      type="text"
-      id="sendfox_form_last_name"
-      placeholder="Last Name"
-      name="last_name"
-      required
-    />
-  </p>
-  <p>
-    <label for="sendfox_form_phone_number">Phone Number:</label><input
-      type="text"
-      id="sendfox_form_phone_number"
-      name="contact_fields[phone_number]"
-      placeholder="Phone Number"
-    />
-  </p>
-  <p>
-    <label for="sendfox_form_message">Message:</label><input
-      type="text"
-      id="sendfox_form_message"
-      name="contact_fields[message]"
-      placeholder="Message"
-    />
-  </p>
   <p>
     <label for="sendfox_form_email">Email:</label><input
       type="email"
@@ -47,6 +13,11 @@
       name="email"
       required
     />
+  </p>
+  <p>
+    <label
+      ><input type="checkbox" name="gdpr" value="1" required /> I agree to receive
+      email updates and promotions.</label>
   </p>
   <!-- no botz please -->
   <div style="position: absolute; left: -5000px;" aria-hidden="true">
@@ -58,6 +29,6 @@
       autocomplete="off"
     />
   </div>
-  <p><button type="submit">Enviar</button></p>
+  <p><button type="submit">Submit</button></p>
 </form>
 <script src="https://sendfox.com/js/form.js"></script>

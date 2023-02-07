@@ -1,0 +1,68 @@
+<form
+  method="post"
+  action="https://sendfox.com/form/m89nx2/3qxnl6"
+  id="3qxnl6"
+  data-async="true"
+  data-recaptcha="false"
+  class="border-2 rounded-xl p-4 sm:p-8 max-w-md mx-auto bg-neutral-50 flex flex-col"
+>
+  <div class="flex flex-col sm:flex-row sm:gap-4">
+    <input
+      type="text"
+      id="sendfox_form_name"
+      placeholder="Nombre"
+      name="first_name"
+      class="form-input w-full rounded-md bg-slate-50 border-gray-200 mb-4 text-stone-600 placeholder-stone-400"
+      required
+    />
+    <input
+      type="text"
+      id="sendfox_form_last_name"
+      placeholder="Apellido"
+      name="last_name"
+      class="form-input w-full rounded-md bg-slate-50 border-gray-200 mb-4 text-stone-600 placeholder-stone-400"
+      required
+    />
+  </div>
+  <input
+    type="tel"
+    id="sendfox_form_phone_number"
+    name="contact_fields[phone_number]"
+    placeholder="Teléfono"
+    class="form-input w-full rounded-md bg-slate-50 border-gray-200 mb-4 text-stone-600 placeholder-stone-400"
+  />
+  <input
+    type="email"
+    id="sendfox_form_email"
+    placeholder="Correo electrónico"
+    name="email"
+    class="form-input w-full rounded-md bg-slate-50 border-gray-200 mb-4 text-stone-600 placeholder-stone-400"
+    required
+  />
+  <textarea
+    name="contact_fields[message]"
+    id="sendfox_form_message"
+    placeholder="Mensaje"
+    cols="30"
+    rows="8"
+    class="form-textarea w-full rounded-md bg-slate-50 border-gray-200 mb-4 text-stone-600 placeholder-stone-400"
+    required
+  >
+  </textarea>
+  <!-- no botz please -->
+  <div style="position: absolute; left: -5000px;" aria-hidden="true">
+    <input
+      type="text"
+      name="a_password"
+      tabindex="-1"
+      value=""
+      autocomplete="off"
+    />
+  </div>
+  <button
+    type="submit"
+    class="px-8 py-2 bg-cyan-400 hover:bg-sky-800 text-white text-lg font-bold rounded-md w-2/3"
+    >Enviar</button
+  >
+</form>
+<script src="https://sendfox.com/js/form.js"></script>
