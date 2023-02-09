@@ -13,11 +13,14 @@ import partytown from "@astrojs/partytown";
 import robotsTxt from "astro-robots-txt";
 
 // https://astro.build/config
+import sitemap from "@astrojs/sitemap";
+
+// https://astro.build/config
 export default defineConfig({
   site: "https://comercializacionprofesional.com",
   integrations: [tailwind(), image({
     serviceEntryPoint: "@astrojs/image/sharp"
   }), partytown({
     forward: ["dataLayer.push"]
-  }), robotsTxt()]
+  }), robotsTxt(), sitemap()]
 });
