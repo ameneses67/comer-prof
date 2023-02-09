@@ -10,14 +10,14 @@ import image from "@astrojs/image";
 import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
+import robotsTxt from "astro-robots-txt";
+
+// https://astro.build/config
 export default defineConfig({
-  integrations: [
-    tailwind(),
-    image({
-      serviceEntryPoint: "@astrojs/image/sharp",
-    }),
-    partytown({
-      forward: ["dataLayer.push"],
-    }),
-  ],
+  site: "https://comercializacionprofesional.com",
+  integrations: [tailwind(), image({
+    serviceEntryPoint: "@astrojs/image/sharp"
+  }), partytown({
+    forward: ["dataLayer.push"]
+  }), robotsTxt()]
 });
