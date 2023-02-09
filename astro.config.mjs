@@ -22,5 +22,7 @@ export default defineConfig({
     serviceEntryPoint: "@astrojs/image/sharp"
   }), partytown({
     forward: ["dataLayer.push"]
-  }), robotsTxt(), sitemap()]
+  }), robotsTxt(), sitemap({
+    filter: (page) => page !== "https://comercializacionprofesional.com/notificacion/"
+  })]
 });
