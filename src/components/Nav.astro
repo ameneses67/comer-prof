@@ -1,6 +1,6 @@
 ---
 // library imports
-import { Image } from "@astrojs/image/components";
+import { Picture } from "@astrojs/image/components";
 
 // component imports
 import Button from "./Button.astro";
@@ -20,7 +20,13 @@ import Logo from "../images/logo.png";
     class="navbar container mx-auto px-6 sm:px-8 py-2 flex justify-between items-center"
   >
     <a href="/" aria-label="Ir a página principal">
-      <Image src={Logo} alt="Logotipo" width={150} format="avif" />
+      <!-- <Image src={Logo} alt="Logotipo" width={150} format="avif" /> -->
+      <Picture
+        src={Logo}
+        alt="Logotipo"
+        widths={[100, 150]}
+        sizes="(max-width: 480px) 100px, 150px"
+      />
     </a>
     <ul class="hidden md:flex gap-x-6 text-lg">
       {
