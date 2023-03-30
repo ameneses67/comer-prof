@@ -8,13 +8,16 @@ import Footer from "../components/Footer.astro";
 
 const {
   title = "Comercialización Profesional",
-  description = "Distribución y venta de material médico garantizados y aprobados.",
+  description = "Los productos que manejamos cuentan con certificados de garantía y son approbados por las diferentes disposiciones sanitarias de cada país. Tenemos tratos comerciales con las mejores empresas de distribución del mundo.",
+  image,
+  frontmatter,
+  robots,
 } = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
-  <Head {title} {description} />
+  <Head {title} {description} {image} {frontmatter} {robots} />
   <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript>
