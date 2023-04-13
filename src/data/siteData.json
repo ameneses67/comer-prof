@@ -2,7 +2,7 @@
   "title": "Comercialización Profesional",
   "description": "Los productos que manejamos cuentan con certificados de garantía y son approbados por las diferentes disposiciones sanitarias de cada país. Tenemos tratos comerciales con las mejores empresas de distribución del mundo.",
   "image": {
-    "src": "/bg-img.webp",
+    "src": "https://comercializacionprofesional.com/hero-image.png",
     "alt": "Material médico"
   }
 }
